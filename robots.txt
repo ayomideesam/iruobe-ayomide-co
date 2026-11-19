@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayomideesam.github.io/iruobe-ayomide-co/sitemap.xml

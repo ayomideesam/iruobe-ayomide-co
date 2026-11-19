@@ -2,20 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Iruobe Ayomide Co. · Wholesale &amp; Retail</title>
-  <meta name="description" content="Iruobe Ayomide Co. is an independent online retailer selling new, brand-name consumer goods to shoppers in the United States through Amazon's fulfilment network.">
+  <meta name="description" content="Iruobe Ayomide Co. is an independent online retailer selling new, brand-name consumer goods to shoppers in the United States through Amazon's fulfilment network. Brands and distributors: become a supplier.">
+  <link rel="canonical" href="https://ayomideesam.github.io/iruobe-ayomide-co/">
   <meta name="theme-color" content="#F5EFE4" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0E1714" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Iruobe Ayomide Co. · Wholesale & Retail">
   <meta property="og:description" content="Genuine products, carefully sourced and delivered fast.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ayomideesam.github.io/iruobe-ayomide-co/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
   <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Iruobe Ayomide Co.",
+    "url": "https://ayomideesam.github.io/iruobe-ayomide-co/",
+    "logo": "https://ayomideesam.github.io/iruobe-ayomide-co/favicon.svg",
+    "email": "iruobeakhigbe@gmail.com",
+    "foundingDate": "2026",
+    "founder": { "@type": "Person", "name": "Iruobe Akhigbe Ayomide" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
+    "description": "Independent online retailer selling new, brand-name consumer goods to US shoppers through Amazon's fulfilment network."
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -29,13 +45,20 @@
           <span class="brand__tag">Wholesale &amp; Retail</span>
         </span>
       </a>
-      <nav class="nav__links" aria-label="Main">
-        <a href="#standards">Standards</a>
+      <nav class="nav__links" id="site-menu" aria-label="Main">
+        <a href="#about">About</a>
         <a href="#process">How we work</a>
         <a href="#categories">Categories</a>
         <a href="#suppliers">Suppliers</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav__menu-only" href="#contact">Contact</a>
       </nav>
-      <a class="btn btn--small btn--ink" href="#contact">Contact</a>
+      <div class="nav__actions">
+        <a class="btn btn--small btn--ink nav__contact" href="#contact">Contact</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -44,7 +67,7 @@
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="status" data-reveal><span class="status__dot"></span>Amazon US storefront launching soon</p>
+          <p class="status" data-reveal><span class="status__dot"></span>Amazon US store launching soon</p>
           <h1 class="display" data-reveal>Genuine products, <em>carefully</em> sourced and delivered fast.</h1>
           <p class="lead" data-reveal>
             Iruobe Ayomide Co. is an independent online retailer. We buy new, brand-name consumer goods from
@@ -52,7 +75,7 @@
             United States through Amazon's fulfilment network.
           </p>
           <div class="hero__actions" data-reveal>
-            <a class="btn btn--clay" href="mailto:iruobeakhigbe@gmail.com?subject=Wholesale%20enquiry%20-%20Iruobe%20Ayomide%20Co.">Open a wholesale account</a>
+            <a class="btn btn--clay" href="#supplier-form">Become a supplier</a>
             <a class="btn btn--ghost" href="#process">How we work <span aria-hidden="true">↓</span></a>
           </div>
           <ul class="promises" data-reveal>
@@ -80,11 +103,8 @@
 
             <circle cx="290" cy="215" r="190" fill="var(--sun)"/>
             <rect x="20" y="40" width="200" height="160" fill="url(#dots)" opacity=".8"/>
-
-            <!-- Ground shadow -->
             <ellipse cx="270" cy="452" rx="215" ry="20" fill="var(--shadow)"/>
 
-            <!-- Box C: small, right -->
             <g class="box box--c">
               <polygon points="368,330 468,330 492,312 392,312" fill="var(--kraft-1)"/>
               <polygon points="468,330 492,312 492,420 468,440" fill="url(#kraftSide)"/>
@@ -93,21 +113,18 @@
               <polygon points="410,330 426,330 450,312 434,312" fill="var(--tape)"/>
             </g>
 
-            <!-- Box A: large, bottom -->
             <g class="box box--a">
               <polygon points="70,270 330,270 380,232 120,232" fill="var(--kraft-1)"/>
               <polygon points="330,270 380,232 380,404 330,444" fill="url(#kraftSide)"/>
               <rect x="70" y="270" width="260" height="174" fill="url(#kraftFront)"/>
               <polygon points="186,270 214,270 264,232 236,232" fill="var(--tape)"/>
               <rect x="186" y="270" width="28" height="44" fill="var(--tape)"/>
-              <!-- handling marks -->
               <g stroke="var(--mark)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M96 420v-22m0 0l-7 8m7-8l7 8"/>
                 <path d="M118 420v-22m0 0l-7 8m7-8l7 8"/>
               </g>
             </g>
 
-            <!-- Box B: medium, stacked -->
             <g class="box box--b">
               <polygon points="120,150 290,150 326,122 156,122" fill="var(--kraft-1)"/>
               <polygon points="290,150 326,122 326,242 290,270" fill="url(#kraftSide)"/>
@@ -116,7 +133,6 @@
               <rect x="194" y="150" width="22" height="34" fill="var(--tape)"/>
             </g>
 
-            <!-- Shipping label -->
             <g class="label" transform="rotate(-5 235 360)">
               <rect x="150" y="318" width="170" height="104" rx="6" fill="var(--label)" stroke="var(--label-line)"/>
               <text x="164" y="342" class="label__brand">IRUOBE AYOMIDE CO.</text>
@@ -182,8 +198,28 @@
       </div>
     </section>
 
+    <!-- About -->
+    <section class="section section--tint" id="about">
+      <div class="wrap about">
+        <div class="about__copy" data-reveal>
+          <p class="eyebrow">About us</p>
+          <h2 class="title">Small on purpose. <em>Serious</em> about the details.</h2>
+          <p>Iruobe Ayomide Co. was founded in 2026 by Iruobe Akhigbe Ayomide in Lagos, Nigeria. Our founder's background is in building software for regulated financial institutions, and we run the business the same way: clear records, careful processes and decisions based on data.</p>
+          <p>We'd rather carry a focused range of products we can source properly than a huge catalogue we can't stand behind. We stock what customers are actually looking for, reorder steadily as it sells, and grow brand by brand.</p>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Trading name</dt><dd>Iruobe Ayomide Co.</dd></div>
+          <div><dt>Founded</dt><dd>2026</dd></div>
+          <div><dt>Founder</dt><dd>Iruobe Akhigbe Ayomide</dd></div>
+          <div><dt>Based in</dt><dd>Lagos, Nigeria</dd></div>
+          <div><dt>Sells to</dt><dd>Customers in the United States</dd></div>
+          <div><dt>Fulfilment</dt><dd>Fulfilled by Amazon, via a US prep partner</dd></div>
+        </dl>
+      </div>
+    </section>
+
     <!-- Process -->
-    <section class="section section--tint" id="process">
+    <section class="section" id="process">
       <div class="wrap">
         <header class="section__head" data-reveal>
           <p class="eyebrow">How we work</p>
@@ -215,7 +251,7 @@
     </section>
 
     <!-- Categories -->
-    <section class="section" id="categories">
+    <section class="section section--tint" id="categories">
       <div class="wrap">
         <header class="section__head section__head--split" data-reveal>
           <div>
@@ -261,7 +297,6 @@
             <p class="eyebrow eyebrow--light">For brands &amp; distributors</p>
             <h2 class="title title--light">Let's build a <em>long-term</em> wholesale relationship.</h2>
             <p>We're looking for suppliers who value reliable, policy-compliant resellers. Here's what you can expect from us.</p>
-            <a class="btn btn--clay" href="mailto:iruobeakhigbe@gmail.com?subject=Wholesale%20enquiry%20-%20Iruobe%20Ayomide%20Co.">Get in touch</a>
           </div>
           <ul class="panel__list">
             <li><span>01</span>Steady, repeat purchase orders</li>
@@ -270,11 +305,100 @@
             <li><span>04</span>Prompt payment and clear communication</li>
           </ul>
         </div>
+
+        <div class="enquiry" id="supplier-form">
+          <header class="enquiry__head" data-reveal>
+            <p class="eyebrow">Become a supplier</p>
+            <h2 class="title title--sm">Tell us about your brand.</h2>
+            <p class="section__note">Fill this in and your email app will open with everything ready to send. We reply within two business days.</p>
+          </header>
+
+          <form class="form" data-reveal novalidate>
+            <div class="field">
+              <label for="f-company">Company or brand <span aria-hidden="true">*</span></label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="f-name">Your name <span aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Work email <span aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+            <div class="field">
+              <label for="f-website">Website</label>
+              <input id="f-website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="yourbrand.com">
+            </div>
+            <div class="field">
+              <label for="f-type">You are a <span aria-hidden="true">*</span></label>
+              <div class="select">
+                <select id="f-type" name="type" required>
+                  <option value="" selected disabled>Choose one</option>
+                  <option>Brand owner</option>
+                  <option>Manufacturer</option>
+                  <option>Authorised distributor</option>
+                  <option>Wholesaler</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-categories">Product categories</label>
+              <input id="f-categories" name="categories" type="text" placeholder="e.g. Home &amp; Kitchen">
+            </div>
+            <div class="field field--full">
+              <label for="f-message">Anything else we should know?</label>
+              <textarea id="f-message" name="message" rows="4" placeholder="Minimum order quantity, price list, how you work with online resellers…"></textarea>
+            </div>
+            <div class="form__foot field--full">
+              <button class="btn btn--clay" type="submit">Send enquiry</button>
+              <p class="form__privacy">We only use these details to reply to you. See our <a href="privacy.html">privacy notice</a>.</p>
+            </div>
+            <div class="form__status field--full" role="status" aria-live="polite" hidden>
+              <p><strong>Your email app should now be open with your enquiry.</strong> If nothing happened, email us directly at
+                <a href="mailto:iruobeakhigbe@gmail.com">iruobeakhigbe<wbr>@gmail.com</a>.</p>
+              <button class="btn btn--small btn--ghost" type="button" data-copy="iruobeakhigbe@gmail.com">Copy email address</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--tint" id="faq">
+      <div class="wrap faq">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Supplier FAQ</p>
+          <h2 class="title">Questions brands <em>usually</em> ask.</h2>
+        </header>
+        <div class="faq__list">
+          <details data-reveal>
+            <summary>Where do you sell?</summary>
+            <p>We sell to customers in the United States on Amazon.com, using Fulfilment by Amazon. Amazon.ca and Walmart Marketplace are next on our roadmap.</p>
+          </details>
+          <details data-reveal>
+            <summary>Will you follow our MAP and brand policies?</summary>
+            <p>Yes. We list at or above your minimum advertised price, use your approved content and imagery, and follow any reseller guidelines you share with us.</p>
+          </details>
+          <details data-reveal>
+            <summary>Where would our orders ship?</summary>
+            <p>To our US-based prep partner, who inspects each shipment and sends it on to Amazon fulfilment centres. We share the full address when we open an account with you.</p>
+          </details>
+          <details data-reveal>
+            <summary>What size orders do you place?</summary>
+            <p>We usually start with a test order, then reorder steadily as products sell through. If you have a minimum order quantity or opening order value, let us know up front.</p>
+          </details>
+          <details data-reveal>
+            <summary>What are your payment terms?</summary>
+            <p>We're happy to prepay initial orders. Once we've built a track record together, we're open to discussing terms.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- Marketplaces -->
-    <section class="section section--tight" id="marketplaces">
+    <section class="section" id="marketplaces">
       <div class="wrap">
         <header class="section__head" data-reveal>
           <p class="eyebrow">Where you'll find us</p>
@@ -293,7 +417,7 @@
       <div class="wrap contact__inner" data-reveal>
         <p class="eyebrow">Contact</p>
         <h2 class="display display--contact">Let's <em>talk</em>.</h2>
-        <a class="contact__email" href="mailto:iruobeakhigbe@gmail.com?subject=Enquiry%20-%20Iruobe%20Ayomide%20Co.">iruobeakhigbe@gmail.com</a>
+        <a class="contact__email" href="mailto:iruobeakhigbe@gmail.com?subject=Enquiry%20-%20Iruobe%20Ayomide%20Co.">iruobeakhigbe<wbr>@gmail.com</a>
         <p class="contact__meta">Based in Lagos, Nigeria · Selling to customers in the United States</p>
       </div>
     </section>
@@ -305,6 +429,12 @@
         <span class="seal seal--small" aria-hidden="true">IA</span>
         <p>© <span data-year>2026</span> Iruobe Ayomide Co.<br>Operated by Iruobe Akhigbe Ayomide, Lagos, Nigeria.</p>
       </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#suppliers">Suppliers</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
       <p class="footer__legal">Amazon, Walmart and related marks are trademarks of their respective owners. Iruobe Ayomide Co. is an independent seller and is not affiliated with or endorsed by them.</p>
     </div>
   </footer>
