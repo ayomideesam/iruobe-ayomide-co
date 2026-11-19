@@ -26,6 +26,7 @@
     "url": "https://ayomideesam.github.io/iruobe-ayomide-co/",
     "logo": "https://ayomideesam.github.io/iruobe-ayomide-co/favicon.svg",
     "email": "iruobeakhigbe@gmail.com",
+    "telephone": "+2347038772342",
     "foundingDate": "2026",
     "founder": { "@type": "Person", "name": "Iruobe Akhigbe Ayomide" },
     "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
@@ -310,10 +311,15 @@
           <header class="enquiry__head" data-reveal>
             <p class="eyebrow">Become a supplier</p>
             <h2 class="title title--sm">Tell us about your brand.</h2>
-            <p class="section__note">Fill this in and your email app will open with everything ready to send. We reply within two business days.</p>
+            <p class="section__note">Send it straight to our inbox, or on WhatsApp if you prefer. We reply within two business days.</p>
+            <a class="wa-inline" href="https://wa.me/2347038772342" data-wa="Hello Iruobe Ayomide Co., I'm contacting you from your website about supplying your business." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="wa-ring" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path class="wa-phone" d="M9.2 8.2c.3-.5.8-.5 1-.1l.8 1.6c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.6.8c.4.2.4.7-.1 1-.6.5-1.4.8-2.2.6-2.4-.6-4.3-2.5-4.9-4.9-.2-.8.1-1.6.7-2.1Z"/></svg>
+              <span>Prefer to chat? <strong>+234 703 877 2342</strong> on WhatsApp</span>
+            </a>
           </header>
 
-          <form class="form" data-reveal novalidate>
+          <!-- Paste the Web3Forms access key into data-access-key to deliver enquiries straight to Gmail. -->
+          <form class="form" data-reveal novalidate data-access-key="">
             <div class="field">
               <label for="f-company">Company or brand <span aria-hidden="true">*</span></label>
               <input id="f-company" name="company" type="text" autocomplete="organization" required>
@@ -325,6 +331,10 @@
             <div class="field">
               <label for="f-email">Work email <span aria-hidden="true">*</span></label>
               <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone or WhatsApp</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+1 555 010 0000">
             </div>
             <div class="field">
               <label for="f-website">Website</label>
@@ -343,22 +353,39 @@
                 </select>
               </div>
             </div>
-            <div class="field">
+            <div class="field field--full">
               <label for="f-categories">Product categories</label>
-              <input id="f-categories" name="categories" type="text" placeholder="e.g. Home &amp; Kitchen">
+              <input id="f-categories" name="categories" type="text" placeholder="e.g. Home &amp; Kitchen, Pet Supplies">
             </div>
             <div class="field field--full">
               <label for="f-message">Anything else we should know?</label>
               <textarea id="f-message" name="message" rows="4" placeholder="Minimum order quantity, price list, how you work with online resellers…"></textarea>
             </div>
-            <div class="form__foot field--full">
-              <button class="btn btn--clay" type="submit">Send enquiry</button>
-              <p class="form__privacy">We only use these details to reply to you. See our <a href="privacy.html">privacy notice</a>.</p>
+            <!-- Spam trap: real visitors never see or fill this. -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-hp">Leave this empty</label>
+              <input id="f-hp" name="botcheck" type="text" tabindex="-1" autocomplete="off">
             </div>
-            <div class="form__status field--full" role="status" aria-live="polite" hidden>
-              <p><strong>Your email app should now be open with your enquiry.</strong> If nothing happened, email us directly at
-                <a href="mailto:iruobeakhigbe@gmail.com">iruobeakhigbe<wbr>@gmail.com</a>.</p>
+            <div class="form__foot field--full">
+              <button class="btn btn--clay form__send" type="submit"><span class="form__send-label">Send enquiry</span></button>
+              <button class="btn btn--wa form__wa" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="wa-ring" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path class="wa-phone" d="M9.2 8.2c.3-.5.8-.5 1-.1l.8 1.6c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.6.8c.4.2.4.7-.1 1-.6.5-1.4.8-2.2.6-2.4-.6-4.3-2.5-4.9-4.9-.2-.8.1-1.6.7-2.1Z"/></svg>
+                Send on WhatsApp
+              </button>
+            </div>
+            <p class="form__privacy field--full">We only use these details to reply to you. See our <a href="privacy.html">privacy notice</a>.</p>
+
+            <div class="form__status form__status--ok field--full" data-status="ok" role="status" aria-live="polite" tabindex="-1" hidden>
+              <p><strong>Thank you, your enquiry has been sent.</strong> We'll get back to you within two business days.</p>
+            </div>
+            <div class="form__status form__status--mail field--full" data-status="mail" role="status" aria-live="polite" tabindex="-1" hidden>
+              <p><strong>Your email app should now be open with your enquiry.</strong> If nothing happened, email us at
+                <a href="mailto:iruobeakhigbe@gmail.com">iruobeakhigbe<wbr>@gmail.com</a> or use WhatsApp.</p>
               <button class="btn btn--small btn--ghost" type="button" data-copy="iruobeakhigbe@gmail.com">Copy email address</button>
+            </div>
+            <div class="form__status form__status--error field--full" data-status="error" role="alert" tabindex="-1" hidden>
+              <p><strong>Sorry, your enquiry couldn't be sent.</strong> Please try again, send it on WhatsApp, or email
+                <a href="mailto:iruobeakhigbe@gmail.com">iruobeakhigbe<wbr>@gmail.com</a>.</p>
             </div>
           </form>
         </div>
@@ -418,6 +445,10 @@
         <p class="eyebrow">Contact</p>
         <h2 class="display display--contact">Let's <em>talk</em>.</h2>
         <a class="contact__email" href="mailto:iruobeakhigbe@gmail.com?subject=Enquiry%20-%20Iruobe%20Ayomide%20Co.">iruobeakhigbe<wbr>@gmail.com</a>
+        <a class="btn btn--wa contact__wa" href="https://wa.me/2347038772342" data-wa="Hello Iruobe Ayomide Co., I'm contacting you from your website." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="wa-ring" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path class="wa-phone" d="M9.2 8.2c.3-.5.8-.5 1-.1l.8 1.6c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.6.8c.4.2.4.7-.1 1-.6.5-1.4.8-2.2.6-2.4-.6-4.3-2.5-4.9-4.9-.2-.8.1-1.6.7-2.1Z"/></svg>
+          <span class="contact__wa-text"><strong>Chat on WhatsApp</strong><small>+234 703 877 2342</small></span>
+        </a>
         <p class="contact__meta">Based in Lagos, Nigeria · Selling to customers in the United States</p>
       </div>
     </section>
@@ -438,6 +469,11 @@
       <p class="footer__legal">Amazon, Walmart and related marks are trademarks of their respective owners. Iruobe Ayomide Co. is an independent seller and is not affiliated with or endorsed by them.</p>
     </div>
   </footer>
+
+  <a class="wa-float" href="https://wa.me/2347038772342" data-wa="Hello Iruobe Ayomide Co., I'm contacting you from your website." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path class="wa-ring" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path class="wa-phone" d="M9.2 8.2c.3-.5.8-.5 1-.1l.8 1.6c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.6.8c.4.2.4.7-.1 1-.6.5-1.4.8-2.2.6-2.4-.6-4.3-2.5-4.9-4.9-.2-.8.1-1.6.7-2.1Z"/></svg>
+    <span class="wa-float__label">Chat on WhatsApp</span>
+  </a>
 
   <script src="assets/app.js" defer></script>
 </body>
